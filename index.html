@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuseable-function-js</title>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <!-- available balance-->
+                    <div>
+                        <div class="stats shadow">
+                            <div class="stat">
+
+                                <div id="previous-amount" class="stat-value">89400</div>
+                                <div class="stat-desc">Avaiable Balance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- horizental line borabor divide korar jonno -->
+                    <div class="divider"></div>
+                    <div>
+                        <!-- user action button -->
+                        <button id="click-add-money-option" class="btn btn-lg">Add Money</button>
+                        <button id="click-cash-out-option" class="btn btn-lg">Cash Out</button>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- add money start -->
+                    <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount to add</span>
+                                </label>
+                                <input id="new-amount" type="number" placeholder="Add Amount to withdraw"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="pin-number" type="password" placeholder="Enter 4 digit pin number"
+                                    class="input input-bordered" autocomplete="off" required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-add-money" class="btn btn-primary">Add money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- add money end -->
+
+                    <!-- cash out start -->
+                    <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount to cash out</span>
+                                </label>
+                                <input id="cash-out-amount" type="number" placeholder="Add Amount to withdraw"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="pin-number-cash" type="password" placeholder="Enter 4 digit pin number"
+                                    class="input input-bordered" autocomplete="off" required />
+
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-cash-out-money" class="btn btn-primary">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- cash out end -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
