@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -32,16 +32,17 @@
                         <!-- user action button -->
                         <button id="click-add-money-option" class="btn btn-lg">Add Money</button>
                         <button id="click-cash-out-option" class="btn btn-lg">Cash Out</button>
+                        <button id="click-transaction-option" class="btn btn-lg">Transaction</button>
                     </div>
                     <div class="divider"></div>
                     <!-- add money start -->
-                    <div id="add-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Amount to add</span>
                                 </label>
-                                <input id="new-amount" type="number" placeholder="Add Amount to withdraw"
+                                <input id="new-amount" type="text" placeholder="Add Amount to withdraw"
                                     class="input input-bordered" required />
                             </div>
                             <div class="form-control">
@@ -60,13 +61,13 @@
                     <!-- add money end -->
 
                     <!-- cash out start -->
-                    <div id="cash-out-form" class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-form" class="hidden  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Amount to cash out</span>
                                 </label>
-                                <input id="cash-out-amount" type="number" placeholder="Add Amount to withdraw"
+                                <input id="cash-out-amount" type="text" placeholder="Add Amount to withdraw"
                                     class="input input-bordered" required />
                             </div>
                             <div class="form-control">
@@ -83,6 +84,14 @@
                         </form>
                     </div>
                     <!-- cash out end -->
+
+                    <div id="transaction-section" class="hidden ">
+                        <h1 class="text-3xl font-semibold">transaction</h1>
+                        <div id="transaction-container" class="space-y-2">
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -92,6 +101,7 @@
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
